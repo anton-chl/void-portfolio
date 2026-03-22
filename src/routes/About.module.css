@@ -1,0 +1,281 @@
+.page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.section {
+  padding: var(--space-section) 0;
+}
+
+.container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+/* Particle text anchors */
+.particleAnchor {
+  position: relative;
+  height: 0;
+  pointer-events: none;
+}
+
+.titleSpacer {
+  height: clamp(3.5rem, 7vw, 5.5rem);
+  margin-bottom: -1rem;
+}
+
+.sectionGap {
+  height: 8rem;
+}
+
+.titleSpacerLarge {
+  height: clamp(5rem, 10vw, 8rem);
+  margin-bottom: var(--space-lg);
+}
+
+/* ===========================
+   BIO — sticky text left, tall image right
+   =========================== */
+.bioSection {
+  padding: var(--space-xl) 0 var(--space-section);
+}
+
+.bioGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: var(--space-lg);
+  align-items: start;
+  max-width: none;
+}
+
+.bioText {
+  position: sticky;
+  top: 120px;
+  padding-top: 0.5rem;
+  padding-right: var(--space-xl);
+  align-self: start;
+}
+
+.bioHeading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.bioBody {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.bioPhoto {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.bioImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.resumeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-accent);
+  margin-top: var(--space-md);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.resumeLink:hover {
+  color: var(--color-purple-bright);
+}
+
+.photoCaption {
+  display: block;
+  padding: 0.5rem 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+/* ===========================
+   TIMELINE / EXPERIENCE
+   =========================== */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--color-border-subtle);
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: var(--space-xl);
+}
+
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--color-purple-core);
+  border: 2px solid var(--color-bg-void);
+  z-index: 1;
+}
+
+.timelineCompany {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.timelineRole {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.timelineDate {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.timelineTech {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+}
+
+/* ===========================
+   CONNECT
+   =========================== */
+.connectSection {
+  position: relative;
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.connectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contactEmail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-accent);
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--color-border-purple);
+  border-radius: 8px;
+  transition: background-color var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out),
+    color var(--duration-normal) var(--ease-out);
+}
+
+.contactEmail:hover {
+  background-color: var(--color-purple-core);
+  border-color: var(--color-purple-core);
+  color: #ffffff;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-primary);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.socialLink:hover {
+  color: var(--color-purple-bright);
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .page {
+    padding-top: 80px;
+  }
+
+  .bioGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .bioText {
+    position: static;
+  }
+
+  .bioPhoto {
+    max-width: 300px;
+    order: -1;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineDot {
+    left: -1.5rem;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .titleSpacer {
+    height: clamp(2.5rem, 6vw, 4rem);
+  }
+}

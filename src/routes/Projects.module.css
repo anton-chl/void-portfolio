@@ -1,0 +1,150 @@
+.page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
+  padding-bottom: var(--space-3xl);
+}
+
+/* Each project section */
+.projectSection {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+/* Invisible anchor for 3D particle text position tracking */
+.particleAnchor {
+  position: relative;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Reserve space for the particle title rendered in the 3D canvas */
+.titleSpacer {
+  height: clamp(3.5rem, 7vw, 5.5rem);
+  margin-bottom: 0;
+}
+
+/* Content area below the particle title */
+.projectContent {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Horizontal layout: info left, links right */
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.award {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  padding: 3px 8px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 2px;
+  margin-bottom: 0.6rem;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+/* Links stacked vertically on the right */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+  padding: 0.35rem 0;
+  transition: color var(--duration-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--color-purple-bright);
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dot {
+  opacity: 0.4;
+}
+
+/* Devpost link */
+.devpostLink {
+  margin-top: var(--space-2xl);
+  text-align: center;
+}
+
+.devpostAnchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--color-text-accent);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.devpostAnchor:hover {
+  color: var(--color-purple-bright);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 80px;
+  }
+
+  .titleSpacer {
+    height: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .body {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

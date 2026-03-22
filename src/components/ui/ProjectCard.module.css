@@ -1,0 +1,122 @@
+.card {
+  background: var(--color-bg-deep);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--color-border-purple);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px var(--color-purple-glow);
+}
+
+
+.thumb {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.card:hover .thumb {
+  transform: scale(1.02);
+}
+
+.award {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  padding: 3px 8px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 2px;
+  width: fit-content;
+  margin-bottom: 0.4rem;
+}
+
+.thumbGlyph {
+  font-family: 'Array Wide', var(--font-display);
+  font-weight: 700;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.04);
+  user-select: none;
+}
+
+.content {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: 'Raleway', var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.links {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.iconLink {
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) var(--ease-out);
+  display: flex;
+  align-items: center;
+}
+
+.iconLink:hover {
+  color: var(--color-purple-bright);
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dot {
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .thumb {
+    height: 240px;
+  }
+}

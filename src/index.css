@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@import './styles/reset.css';
+@import './styles/variables.css';
+
+/* === Nasalization Font === */
+@font-face {
+  font-family: 'Nasalization';
+  src: url('/fonts/Nasalization.woff2') format('woff2'),
+    url('/fonts/Nasalization.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Array Font Family === */
+@font-face {
+  font-family: 'Array';
+  src: url('/fonts/Array-Regular.woff2') format('woff2'),
+    url('/fonts/Array-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array';
+  src: url('/fonts/Array-Semibold.woff2') format('woff2'),
+    url('/fonts/Array-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array';
+  src: url('/fonts/Array-Bold.woff2') format('woff2'),
+    url('/fonts/Array-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array Wide';
+  src: url('/fonts/Array-Wide.woff2') format('woff2'),
+    url('/fonts/Array-Wide.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array Wide';
+  src: url('/fonts/Array-SemiboldWide.woff2') format('woff2'),
+    url('/fonts/Array-SemiboldWide.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array Wide';
+  src: url('/fonts/Array-BoldWide.woff2') format('woff2'),
+    url('/fonts/Array-BoldWide.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Global Styles === */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: var(--color-bg-void);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-bg-void);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* === Selection === */
+::selection {
+  background: rgba(124, 58, 237, 0.3);
+  color: var(--color-text-primary);
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* === Font Preloader === */
+.font-loader {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font-family: 'Array', 'Array Wide';
+  z-index: -1;
+}

@@ -1,0 +1,59 @@
+:root {
+  /* === BACKGROUNDS === */
+  --color-bg-void: #000000;
+  --color-bg-deep: #08080c;
+  --color-bg-card: #0f0f14;
+  --color-bg-elevated: #16161e;
+
+  /* === BORDERS === */
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  --color-border-active: rgba(255, 255, 255, 0.08);
+  --color-border-purple: rgba(139, 92, 246, 0.15);
+
+  /* === TEXT === */
+  --color-text-primary: #ededed;
+  --color-text-secondary: #8b8b9e;
+  --color-text-muted: #4a4a5c;
+  --color-text-accent: #c4b5fd;
+
+  /* === PURPLE ACCENT FAMILY === */
+  --color-purple-deep: #1a0a2e;
+  --color-purple-shadow: #2d1854;
+  --color-purple-core: #7c3aed;
+  --color-purple-bright: #8b5cf6;
+  --color-purple-soft: #c4b5fd;
+  --color-purple-glow: rgba(124, 58, 237, 0.12);
+  --color-purple-bloom: rgba(139, 92, 246, 0.06);
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Array', 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  /* === SPACING === */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+  --space-section: clamp(5rem, 12vh, 8rem);
+
+  /* === LAYOUT === */
+  --content-max-width: 1200px;
+  --content-padding: clamp(1.5rem, 4vw, 3rem);
+
+  /* === TRANSITIONS === */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* === Z-INDEX === */
+  --z-canvas: 0;
+  --z-content: 1;
+  --z-nav: 100;
+  --z-lightbox: 200;
+}
