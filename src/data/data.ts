@@ -33,7 +33,7 @@ export const about = {
     "I'm a Computer Engineering student at the University of Waterloo with a love for mathematics and computer science. Right now, my interests lie heavily in machine learning and computer vision, and med tech.",
     "When I'm not making projects, doing hackathons, or schoolwork, I like to indulge myself in visual art, whether it's drawing, painting, or even origami.",
   ],
-  photo: '/lattice-me.jpg',
+  photo: '/me-using-lattice.jpg',
   skillGroups: [
     { label: 'Languages', skills: ['Python', 'C/C++', 'C#', 'Java', 'HTML/CSS', 'JavaScript/TypeScript', 'Go'] },
     { label: 'Frontend', skills: ['React', 'Next.js', 'Tailwind CSS'] },

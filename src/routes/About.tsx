@@ -1,6 +1,6 @@
 import { useRef, useEffect, useCallback } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, Github, Linkedin, ArrowUpRight, FileText } from 'lucide-react'
+import { Mail, Github, Linkedin, ArrowUpRight } from 'lucide-react'
 import { about, siteConfig } from '@/data/data'
 import { fadeInUp } from '@/lib/motion'
 import type { SectionScrollData } from '@/components/three/SceneManager'
@@ -110,7 +110,6 @@ export function About({ onSectionData }: AboutProps) {
                 rel="noopener noreferrer"
                 className={styles.resumeLink}
               >
-                <FileText size={16} />
                 View my resume
                 <ArrowUpRight size={12} />
               </a>
