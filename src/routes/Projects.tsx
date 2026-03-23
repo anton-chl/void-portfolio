@@ -32,10 +32,10 @@ export function Projects({ onSectionData }: ProjectsProps) {
       if (!ref.current) return
 
       const rect = ref.current.getBoundingClientRect()
-      const assembleStart = vh * 0.95
-      const assembleEnd = vh * 0.75
-      const dissolveStart = vh * -0.05
-      const dissolveEnd = vh * -0.25
+      const assembleStart = vh * 1.1
+      const assembleEnd = vh * 0.85
+      const dissolveStart = vh * -0.15
+      const dissolveEnd = vh * -0.35
 
       let progress = 0
       if (rect.top > assembleStart) {
@@ -63,7 +63,12 @@ export function Projects({ onSectionData }: ProjectsProps) {
   }, [onSectionData])
 
   useEffect(() => {
+    // Recalculate after layout settles (scroll-to-top + paint)
     updateSectionData()
+    requestAnimationFrame(() => {
+      updateSectionData()
+      requestAnimationFrame(updateSectionData)
+    })
     window.addEventListener('scroll', updateSectionData, { passive: true })
     window.addEventListener('resize', updateSectionData, { passive: true })
     return () => {

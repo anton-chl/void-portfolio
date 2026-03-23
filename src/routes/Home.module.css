@@ -360,6 +360,29 @@
    RESPONSIVE
    =========================== */
 @media (max-width: 768px) {
+  .heroContent {
+    margin-top: 10vh;
+  }
+
+  .heroTagline {
+    font-size: clamp(0.55rem, 2.8vw, 0.85rem);
+  }
+
+  .projectsIntro {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .headingSpacer {
+    height: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: var(--space-lg);
+  }
+
+  .headingSpacerLarge {
+    height: clamp(3rem, 7vw, 5rem);
+    margin-bottom: var(--space-md);
+  }
+
   .featuredCard,
   .featuredCard:nth-child(2),
   .featuredCard:nth-child(3) {
@@ -370,6 +393,10 @@
   .featuredThumb,
   .featuredCardHero .featuredThumb {
     height: 180px;
+  }
+
+  .featuredTitle {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
   }
 
   .timeline {

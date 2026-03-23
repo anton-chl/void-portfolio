@@ -70,6 +70,10 @@ export function About({ onSectionData }: AboutProps) {
 
   useEffect(() => {
     updateSectionData()
+    requestAnimationFrame(() => {
+      updateSectionData()
+      requestAnimationFrame(updateSectionData)
+    })
     window.addEventListener('scroll', updateSectionData, { passive: true })
     window.addEventListener('resize', updateSectionData, { passive: true })
     return () => {
@@ -98,7 +102,7 @@ export function About({ onSectionData }: AboutProps) {
               animate={bioInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className={styles.bioHeading}>A brief intro, who am I?</h2>
+              <h2 className={styles.bioHeading}>A brief intro,<br />who am I?</h2>
               {about.bio.map((paragraph, i) => (
                 <p key={i} className={styles.bioBody}>
                   {paragraph}

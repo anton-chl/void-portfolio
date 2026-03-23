@@ -60,10 +60,11 @@
 .bioHeading {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: clamp(2rem, 8vw, 4.5rem);
   line-height: 1.4;
   color: var(--color-text-primary);
   margin-bottom: var(--space-lg);
+  max-width: 80vw;
 }
 
 .bioBody {
@@ -248,18 +249,31 @@
     padding-top: 80px;
   }
 
+  .container {
+    padding: 0 var(--content-padding);
+  }
+
   .bioGrid {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
   }
 
   .bioText {
     position: static;
+    padding-right: 0;
   }
 
   .bioPhoto {
-    max-width: 300px;
+    max-width: 100%;
     order: -1;
+  }
+
+  .bioHeading {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+
+  .bioBody {
+    font-size: 0.95rem;
   }
 
   .timeline {
@@ -276,6 +290,18 @@
   }
 
   .titleSpacer {
-    height: clamp(2.5rem, 6vw, 4rem);
+    height: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .titleSpacerLarge {
+    height: clamp(3rem, 6vw, 5rem);
+  }
+
+  .sectionGap {
+    height: 4rem;
+  }
+
+  .connectSection {
+    padding: var(--space-xl) 0;
   }
 }

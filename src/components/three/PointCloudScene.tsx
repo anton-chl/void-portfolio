@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js'
+import panelStyles from './PointCloudScene.module.css'
 
 // ── .lssnap parser ──────────────────────────────────────────────────────────
 interface Annotation {
@@ -352,21 +353,7 @@ export function PointCloudScene({
       <div style={{ position: 'absolute', top: '12.5%', right: 0, width: '15%', height: '75%', zIndex: 1, pointerEvents: 'auto' }} />
 
       {/* Control panel — right side */}
-      <div style={{
-        position: 'absolute',
-        bottom: '220px',
-        right: '24px',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-        padding: '10px 14px',
-        background: 'rgba(10,10,15,0.35)',
-        backdropFilter: 'blur(8px)',
-        border: '1px solid rgba(167,139,250,0.2)',
-        borderRadius: '4px',
-        pointerEvents: 'auto',
-        zIndex: 5,
-      }}>
+      <div className={panelStyles.controlPanel}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <span style={labelStyle}>Zoom&emsp;&emsp;&ensp;</span>
           <input type="range" min={0.2} max={5} step={0.1} value={zoom}

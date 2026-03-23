@@ -1,0 +1,36 @@
+.controlPanel {
+  position: absolute;
+  bottom: 140px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(10, 10, 15, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 4px;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .controlPanel {
+    bottom: 4px;
+    right: auto;
+    left: 12px;
+    transform: scale(0.8);
+    transform-origin: left bottom;
+    gap: 4px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .controlPanel {
+    transform: scale(0.65);
+    padding: 5px 8px;
+    gap: 2px;
+  }
+}

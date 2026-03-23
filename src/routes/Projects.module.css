@@ -1,5 +1,5 @@
 .page {
-  padding-top: 100px;
+  padding-top: 35vh;
   min-height: 100vh;
 }
 
@@ -130,11 +130,24 @@
 
 @media (max-width: 768px) {
   .page {
-    padding-top: 80px;
+    padding-top: 35vh;
+  }
+
+  .container {
+    padding: 0 var(--content-padding);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .projectContent {
+    max-width: none;
   }
 
   .titleSpacer {
-    height: clamp(2.5rem, 6vw, 4rem);
+    height: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .projectSection {
+    margin-bottom: 5rem;
   }
 
   .body {

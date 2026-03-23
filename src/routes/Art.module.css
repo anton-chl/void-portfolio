@@ -133,12 +133,31 @@
   }
 }
 
-@media (max-width: 640px) {
-  .masonryGrid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 768px) {
   .page {
     padding-top: 100px;
+  }
+
+  .container {
+    padding: 0 var(--content-padding);
+  }
+
+  .masonryGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 16px;
+  }
+
+  .artworkCell {
+    grid-row-end: auto !important;
+  }
+
+  .artworkImage {
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
   }
 }

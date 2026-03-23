@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useLocation, Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { BackgroundCanvas } from './components/three/BackgroundCanvas'
@@ -11,6 +12,14 @@ import { Art } from './routes/Art'
 import { About } from './routes/About'
 import { useScrollVelocity } from './hooks/useScrollProgress'
 import { useState, useCallback } from 'react'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 import type { SectionScrollData } from './components/three/SceneManager'
 
 function App() {
@@ -35,6 +44,7 @@ function App() {
 
   return (
     <SmoothScroll>
+      <ScrollToTop />
       <div className="font-loader" aria-hidden="true" style={{ fontFamily: 'Raleway, Nasalization' }}>Anton Selected Work Connect</div>
 
       {/* Layer 1: Persistent 3D Canvas */}

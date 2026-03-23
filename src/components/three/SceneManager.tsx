@@ -1,3 +1,4 @@
+import { useThree } from '@react-three/fiber'
 import { BackgroundParticles } from './BackgroundParticles'
 import { CursorTrail } from './CursorTrail'
 import { HeroScene } from './HeroScene'
@@ -27,6 +28,7 @@ export function SceneManager({
 }: SceneManagerProps) {
   const tier = useDeviceCapability()
   const config = TIER_CONFIG[tier]
+  const { size, viewport } = useThree()
 
   const isHome = route === '/'
   const isProjects = route === '/projects'
@@ -34,6 +36,23 @@ export function SceneManager({
   const isArt = route === '/art'
 
   const particleDensity = tier === 'low' ? 'low' : tier === 'mid' ? 'medium' : 'high'
+
+  // Scale particle text font sizes based on viewport width so text fits on mobile
+  const fontScale = Math.min(1, size.width / 1200)
+
+  // On mobile, auto-compute fontSize per section so each title fills ~85% of the
+  // visible 3D viewport width, regardless of text length or screen size.
+  // textWorldWidth ≈ textLen * fontSize * avgCharWidth * worldScale
+  const computeSectionFontSize = (text: string, baseFontSize: number) => {
+    if (size.width >= 768) {
+      return Math.round(baseFontSize * fontScale)
+    }
+    const avgCharWidth = 0.55
+    const worldScale = 0.003
+    const targetWorldWidth = viewport.width * 0.85
+    const idealFontSize = targetWorldWidth / (text.length * avgCharWidth * worldScale)
+    return Math.round(Math.min(baseFontSize, idealFontSize))
+  }
 
   return (
     <>
@@ -62,6 +81,7 @@ export function SceneManager({
         heroProgress={heroProgress}
         enableHover={config.enableHover}
         dotStep={config.dotTextStep}
+        fontSize={Math.round(360 * fontScale)}
       />
 
       {/* Scroll-driven section headings (home + projects) */}
@@ -71,7 +91,7 @@ export function SceneManager({
           text={section.text}
           progress={section.progress}
           yOffset={section.yOffset}
-          fontSize={section.fontSize || 90}
+          fontSize={computeSectionFontSize(section.text, section.fontSize || 90)}
           dotStep={config.dotTextStep + 1}
           dotSize={0.004}
           scatterRadius={3}

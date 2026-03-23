@@ -17,6 +17,8 @@ interface ScrollParticleTextProps {
   enableHover?: boolean
   /** When true, particles spiral inward instead of linearly interpolating */
   swirl?: boolean
+  /** Canvas text alignment — defaults to 'center' */
+  textAlign?: CanvasTextAlign
 }
 
 interface Particle {
@@ -52,6 +54,7 @@ export function ScrollParticleText({
   dotSize = 0.005,
   scatterRadius = 4,
   swirl = false,
+  textAlign = 'center' as CanvasTextAlign,
 }: ScrollParticleTextProps) {
   const meshRef = useRef<THREE.InstancedMesh>(null)
   const [fontLoaded, setFontLoaded] = useState(false)
@@ -66,9 +69,12 @@ export function ScrollParticleText({
     if (!fontLoaded) return { positions: [] as Particle[] }
 
     const canvas = document.createElement('canvas')
+    const lines = text.split('\n')
+    const lineCount = lines.length
     const canvasScale = fontSize / 90
     const width = Math.ceil(1400 * canvasScale)
-    const height = Math.ceil(300 * canvasScale)
+    const lineHeight = fontSize * 1.15
+    const height = Math.ceil(Math.max(300 * canvasScale, lineCount * lineHeight + fontSize * 0.5))
     canvas.width = width
     canvas.height = height
     const ctx = canvas.getContext('2d', { willReadFrequently: true })
@@ -78,10 +84,26 @@ export function ScrollParticleText({
     ctx.fillRect(0, 0, width, height)
 
     ctx.font = `700 ${fontSize}px "Raleway", "Nasalization", "Array", sans-serif`
-    ctx.textAlign = 'center'
+    ctx.textAlign = textAlign
     ctx.textBaseline = 'middle'
     ctx.fillStyle = '#ffffff'
-    ctx.fillText(text, width / 2, height / 2)
+    // For non-center alignment, measure the longest line and position so the
+    // text block as a whole stays centered in the canvas (and thus in world space).
+    let textX = width / 2
+    if (textAlign !== 'center') {
+      ctx.font = `700 ${fontSize}px "Raleway", "Nasalization", "Array", sans-serif`
+      const maxLineWidth = Math.max(...lines.map(l => ctx.measureText(l).width))
+      if (textAlign === 'right') {
+        textX = (width + maxLineWidth) / 2
+      } else {
+        textX = (width - maxLineWidth) / 2
+      }
+    }
+    const totalTextHeight = lineCount * lineHeight
+    const startY = (height - totalTextHeight) / 2 + lineHeight / 2
+    for (let l = 0; l < lineCount; l++) {
+      ctx.fillText(lines[l], textX, startY + l * lineHeight)
+    }
 
     const imageData = ctx.getImageData(0, 0, width, height).data
     const tempPositions: Particle[] = []
@@ -137,7 +159,7 @@ export function ScrollParticleText({
       }
     }
     return { positions: tempPositions }
-  }, [text, fontLoaded, fontSize, dotStep, scatterRadius])
+  }, [text, fontLoaded, fontSize, dotStep, scatterRadius, textAlign])
 
   const dummy = useMemo(() => new THREE.Object3D(), [])
   const colorArray = useMemo(
