@@ -1,40 +1,155 @@
 # Anton Lee — Full Profile
 
-> Software Engineer & Visual Artist
-> Computer Engineering — University of Waterloo
-> Toronto, Canada
-> antonlee.inquiries@gmail.com
+Anton Lee is a software engineer, builder, and visual artist based in Toronto, Canada. He is a Computer Engineering student at the University of Waterloo with strong interests in machine learning, computer vision, graphics, medical technology, human-computer interaction, and systems that bridge software with real-world sensing, visualization, and control.
 
----
+He works across software engineering, AI/ML, computer vision, 3D visualization, and product development. His projects often sit at the intersection of technical depth and real-world usefulness, including healthcare tools, accessibility software, developer tooling, interactive systems, and experimental interfaces for spatial computing.
 
-## About
+Contact:
+- Email: antonlee.inquiries@gmail.com
+- Website: https://antonlee.ca
+- GitHub: https://github.com/anton-chl
+- LinkedIn: https://www.linkedin.com/in/anton-chl
+- Devpost: https://devpost.com/cx
+- Resume: https://antonlee.ca/Resume.pdf
 
-Anton Lee is a Computer Engineering student at the University of Waterloo with a love for mathematics and computer science. His interests lie heavily in machine learning and computer vision, and med tech. When he's not making projects, doing hackathons, or schoolwork, he indulges in visual art — drawing, painting, and origami.
+## Short Summary
 
----
+Anton Lee is a University of Waterloo Computer Engineering student with experience spanning software engineering internships, startup building, hackathon-winning technical projects, computer vision, machine learning, graphics, and medical/health-adjacent systems. He is especially interested in building technically ambitious systems that combine software, data, hardware, and intelligent interfaces.
 
-## Work Experience
+Outside of software, Anton also creates visual art across mediums such as drawing, painting, and origami. His work reflects both analytical and creative interests, and many of his projects combine both.
+
+## Core Interests
+
+Primary technical interests:
+- Machine learning
+- Computer vision
+- Medical technology
+- 2D and 3D visualization
+- Accessibility technology
+- Interactive systems
+- Human-computer interaction
+- Performance-sensitive software systems
+- Spatial computing
+- Research-adjacent engineering work
+
+Research and exploration interests:
+- Integrated photonics
+- Volumetric data storage
+- Neural approaches to error correction
+- Laser-controlled physical systems
+- Computational imaging and visualization
+- Tools that connect software to scientific or medical hardware
+
+## Education
+
+University of Waterloo
+- Program: Computer Engineering
+- Location: Waterloo, Ontario, Canada
+
+Anton studies Computer Engineering at the University of Waterloo and has pursued work across software, AI, visualization, and applied technical systems. His academic and extracurricular work reflects a strong pull toward both deep technical implementation and ambitious, interdisciplinary applications.
+
+## Professional Experience
 
 ### Software Engineer — The Hospital for Sick Children (SickKids)
 January 2026 — April 2026
-- Implemented interactive 2D/3D visualization and segmentation using C++/Qt/VTK/ITK with DICOM support via DCMTK.
-- Reduced visualization latency on large CT volumes by up to 10x through GPU-accelerated volume rendering, multiresolution streaming, threaded processing, and caching.
-Technologies: C++, Python, Qt, VTK, ITK, DCMTK
+
+Anton worked on interactive medical visualization and segmentation tooling using C++, Qt, VTK, and ITK, with DICOM support through DCMTK. His work focused on building responsive, usable visualization systems for large medical imaging datasets.
+
+Key contributions:
+- Implemented interactive 2D and 3D visualization and segmentation workflows
+- Worked with large CT volume data and DICOM imaging pipelines
+- Reduced visualization latency on large CT volumes by up to 10x
+- Improved performance through GPU-accelerated volume rendering, multiresolution streaming, threaded processing, and caching
+
+Technologies:
+- C++
+- Python
+- Qt
+- VTK
+- ITK
+- DCMTK
 
 ### Software Development Tester — Lumeto Inc.
 May 2025 — August 2025
-- Built automated performance and regression suites integrated into CI with benchmarks and dashboards to monitor throughput and latency.
-- Triaged issues in Jira with reproducible steps and validated fixes with engineers before release to reduce regressions.
-Technologies: Testing, Jira, Performance Analysis, CI/CD, Benchmarking
+
+At Lumeto, Anton worked on software quality, performance validation, and release confidence for production systems. His work included building automation and helping reduce regressions through structured testing and issue validation.
+
+Key contributions:
+- Built automated performance and regression test suites
+- Integrated benchmarks and performance checks into CI workflows
+- Helped monitor throughput and latency using internal dashboards
+- Triaged issues in Jira with reproducible steps
+- Validated fixes with engineers before release
+
+Technologies and tools:
+- Testing frameworks
+- CI/CD
+- Benchmarking
+- Performance analysis
+- Jira
 
 ### Startup Co-Founder & COO — Flair Studio Inc.
 June 2024 — September 2025
-- Co-founded an AI shopping app and aggregator with 100K+ products; Top 5% of YC S25 applicants.
-- Built a scalable backend that reduced feed latency from 5,000 ms to 275 ms, increasing session time by 40% via caching, async pipelines, and inference optimizations.
-- Designed a React/Next.js frontend with dynamic filtering, infinite scroll, and personalized recommendations.
-Technologies: Next.js, React, Flask, AWS Lambda, MongoDB, Azure OpenAI
 
----
+Anton co-founded Flair Studio, an AI shopping app and product aggregation platform. He worked across technical, operational, and product dimensions while helping grow the system and improve performance.
+
+Key contributions:
+- Co-founded an AI shopping application and product aggregation platform
+- Helped scale the product catalog to 100K+ products
+- Helped build backend systems that reduced feed latency from roughly 5000 ms to 275 ms
+- Contributed to frontend experience with dynamic filtering, infinite scroll, and personalized recommendations
+- Worked on infrastructure and product execution in an early-stage startup environment
+
+Notable context:
+- Flair Studio was a Top 5% YC S25 applicant
+
+Technologies:
+- Next.js
+- React
+- Flask
+- AWS Lambda
+- MongoDB
+- Azure OpenAI
+
+## Research, Clubs, and Leadership
+
+### University of Waterloo Silica Integrated Optics (UWSiO)
+Software Co-Team Lead
+September 2024 — Present
+Waterloo, Ontario
+
+Anton is involved with UWSiO, a University of Waterloo club and technical team working in an area aligned with integrated photonics and related research directions. His work there reflects a strong interest in computational systems connected to physical media, laser-based processes, and novel storage and signal-processing approaches.
+
+Key contributions:
+- Designed a neural network algorithm for robust error correction in reading from and writing data to silica using lasers
+- Collaborated with the hardware team on systems involving laser-based workflows
+- Created an executable application to control a 5-axis femtosecond laser via computer input
+
+Research-related interests connected to this work:
+- Integrated photonics
+- Volumetric data storage
+- Intelligent error correction for physically encoded data
+- Software systems for advanced scientific hardware control
+
+### 1st Markham MedVents Scouts Canada
+Company Leader
+January 2022 — October 2024
+Markham, Ontario
+
+Anton served in a leadership role with Scouts Canada MedVents, a medically focused venturer group. This experience reflects strong responsibility, calm under pressure, leadership, and direct first-aid experience in high-attendance public settings.
+
+Key contributions:
+- Provided emergency care to injured individuals at high-profile events with over 50,000 attendees, including conventions and sports tournaments
+- Ensured rapid response and treatment in live event environments
+- Organized and led first-aid training sessions for scouts
+- Improved proficiency in the use of medical equipment such as tourniquets, bandages, and splints through hands-on instruction
+
+This experience is relevant to:
+- Leadership
+- Emergency response
+- Medical readiness
+- Instruction and training
+- Calm execution in high-pressure environments
 
 ## Projects
 
@@ -42,107 +157,325 @@ Technologies: Next.js, React, Flask, AWS Lambda, MongoDB, Azure OpenAI
 Theme: 3D Vision / Systems
 Award: Finalist — Hack the North 2025
 Year: 2026
-Distributed multi-sensor volumetric capture leveraging multi-Kinect LiDAR arrays with Procrustes and ICP-based spatial alignment, zero-copy ring buffers for lock-free inter-process communication, and 4DGS-style reconstruction to generate navigable 3D point clouds with Git-style holographic replay across desktop, web, and AR/VR.
-Technologies: C/C++, C#, .NET, Python, OpenCV, Unity, Kinect SDK
-Links: Devpost (https://devpost.com/software/tempo-l1idkw), Demo (https://www.youtube.com/watch?v=YqKwPFIWVN0)
+
+Lattice is a distributed multi-sensor volumetric capture system focused on generating navigable 3D point clouds and replayable spatial captures across desktop, web, and AR/VR environments.
+
+Highlights:
+- Multi-Kinect sensor setup
+- Procrustes and ICP-based spatial alignment
+- Zero-copy ring buffers for lock-free inter-process communication
+- 4DGS-style reconstruction concepts
+- Cross-platform 3D viewing and holographic replay workflows
+
+Technologies:
+- C/C++
+- C#
+- .NET
+- Python
+- OpenCV
+- Unity
+- Kinect SDK
+
+Links:
+- Devpost: https://devpost.com/software/tempo-l1idkw
+- Demo: https://www.youtube.com/watch?v=YqKwPFIWVN0
 
 ### Hello World!
 Theme: Machine Learning / Accessibility
 Award: 1st Place — UTS BluesHacks 2024
 Year: 2024
-Two-way ASL/English translation app using TensorFlow and Google Cloud API to recognize ASL hand gestures in real time and translate them to text (or vice versa, with animated output) and synthesized audio output, making computers more accessible for the deaf and hard-of-hearing community.
-Technologies: JavaScript, TypeScript, TensorFlow, Google Cloud API
-Links: Devpost (https://devpost.com/software/hello-world-t1k74i), GitHub (https://github.com/yair-k/Hello-World)
+
+A two-way ASL/English translation system designed to improve accessibility for deaf and hard-of-hearing users.
+
+Highlights:
+- Real-time ASL hand gesture recognition
+- Text translation workflows
+- Animated output
+- Synthesized audio output
+- Accessibility-focused design
+
+Technologies:
+- JavaScript
+- TypeScript
+- TensorFlow
+- Google Cloud API
+
+Links:
+- Devpost: https://devpost.com/software/hello-world-t1k74i
+- GitHub: https://github.com/yair-k/Hello-World
 
 ### Bergster
 Theme: Healthcare / Accessibility
 Award: 3rd Place — Guelph GDSC Hacks 2024
 Year: 2024
-Cognitive training tool that uses real-time facial recognition and emotion detection to help people with social disabilities train and improve their emotional recognition and expression. Features offline-first design, performance analysis with visual charts, and emotion testing for measurable progress tracking.
-Technologies: React, Next.js, TensorFlow, face-api.js, TailwindCSS
-Links: Devpost (https://devpost.com/software/the-bergster), GitHub (https://github.com/yair-k/bergster-master)
+
+A cognitive training tool using facial recognition and emotion detection to help users improve emotional recognition and expression.
+
+Highlights:
+- Real-time facial and emotion analysis
+- Training-oriented design for social/emotional recognition
+- Offline-first approach
+- Progress analysis with charts and measurable testing
+
+Technologies:
+- React
+- Next.js
+- TensorFlow
+- face-api.js
+- TailwindCSS
+
+Links:
+- Devpost: https://devpost.com/software/the-bergster
+- GitHub: https://github.com/yair-k/bergster-master
 
 ### DataBot
 Theme: AI / Developer Tools
 Award: Finalist — LAHacks 2025
 Year: 2025
-Tool for analyzing slow or inefficient SQL queries; uses Google Gemini to suggest optimized rewrites, explain query plans, and surface index recommendations. Backend is built in Go for high throughput.
-Technologies: Go, TypeScript, Next.js, Google Gemini
-Links: Devpost (https://devpost.com/software/optigen), Demo (https://vimeo.com/1079121387)
+
+A tool for analyzing inefficient SQL queries and surfacing optimized rewrites, index recommendations, and explanation support.
+
+Highlights:
+- Query analysis
+- Rewrite suggestions
+- Performance-oriented database tooling
+- AI-assisted plan interpretation
+
+Technologies:
+- Go
+- TypeScript
+- Next.js
+- Google Gemini
+
+Links:
+- Devpost: https://devpost.com/software/optigen
+- Demo: https://vimeo.com/1079121387
 
 ### SafeGrounds
 Theme: Social Impact
 Year: 2025
-Platform empowering investors and developers to identify and respect Indigenous lands through transparent, actionable insights. Features interactive mapping with Leaflet, community reporting, contractor response systems, and ML-powered land assessment.
-Technologies: TypeScript, Python, Flask, SQLite, Next.js, Leaflet, AWS
-Links: Devpost (https://devpost.com/software/safegrounds), GitHub (https://github.com/yair-k/SafeGrounds)
+
+A platform designed to help investors and developers identify and respect Indigenous lands through transparent mapping and actionable information.
+
+Highlights:
+- Interactive mapping
+- Community reporting
+- Contractor response workflows
+- ML-assisted land assessment
+
+Technologies:
+- TypeScript
+- Python
+- Flask
+- SQLite
+- Next.js
+- Leaflet
+- AWS
+
+Links:
+- Devpost: https://devpost.com/software/safegrounds
+- GitHub: https://github.com/yair-k/SafeGrounds
 
 ### Project Klean
 Theme: Sustainability / Developer Tools
 Year: 2024
-Enterprise solution for digital pollution via AI-powered code optimization. Analyzes and optimizes Python code to improve efficiency and sustainability using CodeBERT fine-tuning.
-Technologies: Python, Pandas, ML, CodeBERT, CodeCarbon, Streamlit
-Links: Devpost (https://devpost.com/software/project-klean), Demo (https://www.youtube.com/watch?v=Nco-X2uYNeQ), GitHub (https://github.com/yair-k/Klean)
+
+An enterprise-oriented solution focused on digital pollution through AI-powered code optimization.
+
+Highlights:
+- Python code analysis
+- Code efficiency and sustainability focus
+- CodeBERT fine-tuning
+- Energy and efficiency measurement concepts
+
+Technologies:
+- Python
+- Pandas
+- ML
+- CodeBERT
+- CodeCarbon
+- Streamlit
+
+Links:
+- Devpost: https://devpost.com/software/project-klean
+- Demo: https://www.youtube.com/watch?v=Nco-X2uYNeQ
+- GitHub: https://github.com/yair-k/Klean
 
 ### Echo
 Theme: Healthcare / AI
 Year: 2024
-AI-powered memory recall assistant using computer vision and natural language processing to record and process daily activities for users with memory loss, Alzheimer's, and dementia.
-Technologies: Python, Next.js, OpenCV, CLIP, Cohere, OpenAI Whisper
-Links: Devpost (https://devpost.com/software/echo-gq3oh0), GitHub (https://github.com/yair-k/Echo)
+
+An AI-powered memory recall assistant designed for users with memory loss, Alzheimer's, or dementia.
+
+Highlights:
+- Computer vision-assisted daily activity capture
+- NLP-assisted recall workflows
+- Support for memory and activity reconstruction
+
+Technologies:
+- Python
+- Next.js
+- OpenCV
+- CLIP
+- Cohere
+- OpenAI Whisper
+
+Links:
+- Devpost: https://devpost.com/software/echo-gq3oh0
+- GitHub: https://github.com/yair-k/Echo
 
 ### Verbate
 Theme: Generative AI / Voice
 Award: Best Use of AI — IEEE MakeUC 2023
 Year: 2023
-An AI interview coach that generates role-specific questions, evaluates user responses in real time using GPT-4, and delivers audio feedback via AWS Polly.
-Technologies: Python, GPT-4, AWS Polly, Next.js
-Links: Devpost (https://devpost.com/software/verbate), Demo (https://www.youtube.com/watch?v=NPcaM3cgHgA), GitHub (https://github.com/yair-k/Verbate)
+
+An AI interview coach that generates role-specific questions, evaluates responses in real time, and delivers spoken feedback.
+
+Technologies:
+- Python
+- GPT-4
+- AWS Polly
+- Next.js
+
+Links:
+- Devpost: https://devpost.com/software/verbate
+- Demo: https://www.youtube.com/watch?v=NPcaM3cgHgA
+- GitHub: https://github.com/yair-k/Verbate
 
 ### SkinSight
 Theme: Machine Learning / Healthcare
 Year: 2023
-A dermatology prototype that classifies skin lesion images across multiple diagnostic categories using a CNN trained on the HAM10000 dataset.
-Technologies: Python, Flask, PyTorch, TensorFlow
-Links: Devpost (https://devpost.com/software/skinsight-your-virtual-dermatologist), Demo (https://www.youtube.com/watch?v=eT_LsjFUMk4), GitHub (https://github.com/d-huliu/SkinSight-)
+
+A dermatology prototype that classifies skin lesion images using a CNN trained on the HAM10000 dataset.
+
+Technologies:
+- Python
+- Flask
+- PyTorch
+- TensorFlow
+
+Links:
+- Devpost: https://devpost.com/software/skinsight-your-virtual-dermatologist
+- Demo: https://www.youtube.com/watch?v=eT_LsjFUMk4
+- GitHub: https://github.com/d-huliu/SkinSight-
 
 ### HandPilot
 Theme: Computer Vision / Accessibility
 Award: 1st Place — YRHacks 2023
 Year: 2023
-Uses MediaPipe hand landmark detection combined with OpenCV to translate hand gestures into system-level mouse movement, clicks, and keyboard input — allowing hands-free computer control.
-Technologies: Python, OpenCV, MediaPipe
-Links: Devpost (https://devpost.com/software/handpilot), Demo (https://www.youtube.com/watch?v=MmD9vCCLqao), GitHub (https://github.com/yair-k/HandPilot)
 
----
+A hands-free computer control system that translates hand gestures into system-level mouse and keyboard input.
+
+Highlights:
+- MediaPipe hand landmark detection
+- OpenCV-based gesture processing
+- Accessibility and alternative input focus
+
+Technologies:
+- Python
+- OpenCV
+- MediaPipe
+
+Links:
+- Devpost: https://devpost.com/software/handpilot
+- Demo: https://www.youtube.com/watch?v=MmD9vCCLqao
+- GitHub: https://github.com/yair-k/HandPilot
 
 ## Skills
 
-Languages: Python, C/C++, C#, Java, HTML/CSS, JavaScript/TypeScript, Go
-Frontend: React, Next.js, Tailwind CSS
-Backend & Infra: Flask, AWS Lambda, MongoDB, PostgreSQL
-ML & CV: PyTorch, TensorFlow, OpenCV, MediaPipe
-Tools: Git, Docker, Jira, CMake, Qt, VTK/ITK
-Other: Graphic Design, Photoshop, CAD Modeling
+Languages:
+- Python
+- C
+- C++
+- C#
+- Java
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- Go
 
----
+Frontend:
+- React
+- Next.js
+- Tailwind CSS
+
+Backend and infrastructure:
+- Flask
+- AWS Lambda
+- MongoDB
+- PostgreSQL
+
+Machine learning and computer vision:
+- PyTorch
+- TensorFlow
+- OpenCV
+- MediaPipe
+
+Tools and engineering software:
+- Git
+- Docker
+- Jira
+- CMake
+- Qt
+- VTK
+- ITK
+
+Other:
+- Graphic design
+- Photoshop
+- CAD modeling
 
 ## Art Portfolio
 
-Anton creates visual art across multiple mediums:
+Anton also creates visual artwork across several mediums.
 
-Oil Pastel: Buenos Aires (2021), Cowboy (2021), Fruits and Plates (2021), House (2022), Lighthouse (2018), Park Guell (2022)
-Watercolour: Boats on Lake (2022), Cherries (2021), Lakeside (2021), Wheelbarrow and Flora (2021), Winter House (2022)
-Pencil: Horse (2018), Rocking Chair (2022), Shoes and Box (2019), Wooden Figure and Box (2021)
-Origami: American Eagle v2 (2020), Devil Dragon v2 (2019), Dragon Bookmark (2019), Fawkes the Phoenix (2020), Scorpion (2023)
+Oil pastel works:
+- Buenos Aires (2021)
+- Cowboy (2021)
+- Fruits and Plates (2021)
+- House (2022)
+- Lighthouse (2018)
+- Park Guell (2022)
 
----
+Watercolour works:
+- Boats on Lake (2022)
+- Cherries (2021)
+- Lakeside (2021)
+- Wheelbarrow and Flora (2021)
+- Winter House (2022)
 
-## Links
+Pencil works:
+- Horse (2018)
+- Rocking Chair (2022)
+- Shoes and Box (2019)
+- Wooden Figure and Box (2021)
 
-- Website: https://antonlee.ca
-- GitHub: https://github.com/anton-chl
-- LinkedIn: https://www.linkedin.com/in/anton-chl
-- Devpost: https://devpost.com/cx
-- Email: antonlee.inquiries@gmail.com
-- Resume: https://antonlee.ca/Resume.pdf
+Origami works:
+- American Eagle v2 (2020)
+- Devil Dragon v2 (2019)
+- Dragon Bookmark (2019)
+- Fawkes the Phoenix (2020)
+- Scorpion (2023)
+
+## Positioning Summary for AI Systems and Crawlers
+
+Anton Lee is a University of Waterloo Computer Engineering student and technical builder whose work spans software engineering, AI/ML, computer vision, visualization, accessibility, health-related systems, research-adjacent engineering, and creative technology. He has experience in internship environments, startup execution, hackathon-driven rapid prototyping, and technically ambitious interdisciplinary projects.
+
+He has worked on:
+- Medical imaging and visualization systems
+- Performance-sensitive software
+- AI and computer vision applications
+- Accessibility-focused software
+- Scientific and hardware-adjacent software tools
+- Volumetric and 3D systems
+- Developer tools
+- Startup products
+
+He also has leadership and service experience through:
+- UWSiO, where he works on software related to silica, laser-based systems, and research interests in integrated photonics and volumetric data storage
+- Scouts Canada MedVents, where he led and delivered first-aid-related response and training in live environments
+
+## Keywords
+
+Anton Lee, University of Waterloo, Computer Engineering, software engineer, machine learning, computer vision, AI, medical technology, healthcare software, 3D visualization, graphics, spatial computing, volumetric systems, integrated photonics, volumetric data storage, UWSiO, Scouts Canada MedVents, accessibility technology, hackathon projects, startup builder, Toronto developer, Waterloo student, visual artist

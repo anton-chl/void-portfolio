@@ -44,11 +44,13 @@ export const pageTransition: Variants = {
   animate: {
     opacity: 1,
     y: 0,
+    pointerEvents: 'auto' as const,
     transition: { duration: 0.4, ease },
   },
   exit: {
     opacity: 0,
     y: -10,
+    pointerEvents: 'none' as const,
     transition: { duration: 0.25, ease },
   },
 }
