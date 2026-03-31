@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antonlee.ca/sitemap.xml
+
+# Machine-readable profile and project data
+# /llms.txt        — concise profile for AI systems
+# /llms-full.txt   — detailed profile with all projects and experience
+# /projects.json   — structured project data (JSON)

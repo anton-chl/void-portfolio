@@ -1,0 +1,38 @@
+# Anton Lee
+
+> Software Engineer & Visual Artist
+> Computer Engineering — University of Waterloo
+> Toronto, Canada
+
+## Summary
+
+Anton Lee is a Computer Engineering student at the University of Waterloo who builds at the intersection of machine learning, computer vision, medical imaging, and full-stack systems. He is a multi-time hackathon award winner, startup co-founder (YC S25 top 5% applicant), and visual artist working in oil pastel, watercolour, pencil, and origami.
+
+## Current Focus
+
+- Machine learning and computer vision systems
+- Medical imaging software (C++, Qt, VTK/ITK) at SickKids hospital
+- 3D volumetric capture and reconstruction
+- Full-stack web applications
+
+## Key Skills
+
+Languages: Python, C/C++, C#, Java, TypeScript, Go
+Frontend: React, Next.js, Tailwind CSS, Three.js
+Backend: Flask, AWS Lambda, MongoDB, PostgreSQL
+ML/CV: PyTorch, TensorFlow, OpenCV, MediaPipe
+Tools: Git, Docker, Jira, CMake, Qt, VTK/ITK
+
+## Links
+
+- Website: https://antonlee.ca
+- GitHub: https://github.com/anton-chl
+- LinkedIn: https://www.linkedin.com/in/anton-chl
+- Devpost: https://devpost.com/cx
+- Email: antonlee.inquiries@gmail.com
+- Resume: https://antonlee.ca/Resume.pdf
+
+## For More Detail
+
+See /llms-full.txt for complete project descriptions, work experience, and artwork portfolio.
+See /projects.json for structured project data in JSON format.

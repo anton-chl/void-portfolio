@@ -1,4 +1,4 @@
-import { useEffect, useRef, createContext, useContext } from 'react'
+import { useEffect, useState, createContext, useContext } from 'react'
 import Lenis from 'lenis'
 import type { ReactNode } from 'react'
 
@@ -13,10 +13,20 @@ interface SmoothScrollProps {
 }
 
 export function SmoothScroll({ children }: SmoothScrollProps) {
-  const lenisRef = useRef<Lenis | null>(null)
+  const [lenis, setLenis] = useState<Lenis | null>(null)
+
+  // Force full reload when page is restored from bfcache.
+  // This prevents stale SPA state (broken Lenis, stalled AnimatePresence,
+  // corrupted Three.js frame loop) after navigating back from external sites.
+  useEffect(() => {
+    const handlePageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) window.location.reload()
+    }
+    window.addEventListener('pageshow', handlePageShow)
+    return () => window.removeEventListener('pageshow', handlePageShow)
+  }, [])
 
   useEffect(() => {
-    // Disable on mobile or when reduced motion is preferred
     const isMobile = 'ontouchstart' in window && window.innerWidth < 768
     const prefersReducedMotion = window.matchMedia(
       '(prefers-reduced-motion: reduce)'
@@ -24,27 +34,39 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
 
     if (isMobile || prefersReducedMotion) return
 
-    const lenis = new Lenis({
+    const instance = new Lenis({
       lerp: 0.08,
       smoothWheel: true,
     })
 
-    lenisRef.current = lenis
+    setLenis(instance)
 
+    let rafId: number
     function raf(time: number) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+      instance.raf(time)
+      rafId = requestAnimationFrame(raf)
     }
-    requestAnimationFrame(raf)
+    rafId = requestAnimationFrame(raf)
+
+    // Re-sync Lenis when tab becomes visible again to prevent
+    // scroll position drift after tab was backgrounded
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        instance.scrollTo(window.scrollY, { immediate: true })
+      }
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
 
     return () => {
-      lenis.destroy()
-      lenisRef.current = null
+      cancelAnimationFrame(rafId)
+      document.removeEventListener('visibilitychange', handleVisibility)
+      instance.destroy()
+      setLenis(null)
     }
   }, [])
 
   return (
-    <LenisContext.Provider value={lenisRef.current}>
+    <LenisContext.Provider value={lenis}>
       {children}
     </LenisContext.Provider>
   )

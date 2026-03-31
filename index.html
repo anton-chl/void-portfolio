@@ -2,12 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anton</title>
+
+    <title>Anton Lee — Software Engineer & Visual Artist</title>
+    <meta name="description" content="Anton Lee is a Computer Engineering student at the University of Waterloo building at the intersection of machine learning, computer vision, medical imaging, and full-stack systems. Hackathon finalist, startup co-founder, and visual artist." />
+    <meta name="author" content="Anton Lee" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://antonlee.ca/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Anton Lee" />
+    <meta property="og:title" content="Anton Lee — Software Engineer & Visual Artist" />
+    <meta property="og:description" content="Computer Engineering @ University of Waterloo. Building at the intersection of ML, computer vision, medical imaging, and full-stack systems. Hackathon finalist, startup co-founder, visual artist." />
+    <meta property="og:url" content="https://antonlee.ca/" />
+    <meta property="og:image" content="https://antonlee.ca/me-using-lattice.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_CA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anton Lee — Software Engineer & Visual Artist" />
+    <meta name="twitter:description" content="Computer Engineering @ University of Waterloo. ML, computer vision, medical imaging, full-stack systems. Hackathon finalist & startup co-founder." />
+    <meta name="twitter:image" content="https://antonlee.ca/me-using-lattice.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Anton Lee",
+          "url": "https://antonlee.ca",
+          "description": "Portfolio of Anton Lee — software engineer, computer vision researcher, and visual artist."
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Lee",
+          "url": "https://antonlee.ca",
+          "jobTitle": "Software Engineer",
+          "description": "Computer Engineering student at the University of Waterloo with deep interests in machine learning, computer vision, medical imaging, and full-stack systems. Startup co-founder (YC S25 top 5%), hackathon finalist, and visual artist.",
+          "email": "mailto:antonlee.inquiries@gmail.com",
+          "sameAs": [
+            "https://github.com/anton-chl",
+            "https://www.linkedin.com/in/anton-chl",
+            "https://devpost.com/cx"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "University of Waterloo",
+            "url": "https://uwaterloo.ca"
+          },
+          "knowsAbout": [
+            "Machine Learning", "Computer Vision", "Medical Imaging",
+            "Python", "C/C++", "C#", "Java", "TypeScript", "Go",
+            "React", "Next.js", "PyTorch", "TensorFlow", "OpenCV",
+            "Flask", "AWS", "MongoDB", "PostgreSQL", "Docker",
+            "Three.js", "Qt", "VTK", "ITK"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressCountry": "CA"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Machine-readable pointers -->
+    <link rel="alternate" type="application/json" href="/projects.json" title="Projects data" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Fallback content for crawlers that do not execute JavaScript -->
+    <noscript>
+      <div style="max-width:800px;margin:0 auto;padding:2rem;font-family:system-ui,sans-serif;color:#ededed;background:#000">
+        <h1>Anton Lee</h1>
+        <p>Software Engineer &amp; Visual Artist &bull; Computer Engineering @ University of Waterloo &bull; Toronto, Canada</p>
+
+        <h2>About</h2>
+        <p>I'm a Computer Engineering student at the University of Waterloo with a love for mathematics and computer science. My interests lie heavily in machine learning and computer vision, and med tech. When I'm not making projects, doing hackathons, or schoolwork, I like to indulge myself in visual art, whether it's drawing, painting, or even origami.</p>
+
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Software Engineer — The Hospital for Sick Children (SickKids)</strong> (Jan–Apr 2026): Interactive 2D/3D visualization and segmentation using C++/Qt/VTK/ITK with DICOM support. Reduced visualization latency on large CT volumes by up to 10x.</li>
+          <li><strong>Software Development Tester — Lumeto Inc.</strong> (May–Aug 2025): Automated performance and regression suites integrated into CI with benchmarks and dashboards.</li>
+          <li><strong>Startup Co-Founder &amp; COO — Flair Studio Inc.</strong> (Jun 2024–Sep 2025): Co-founded an AI shopping app with 100K+ products; Top 5% of YC S25 applicants. Reduced feed latency from 5,000ms to 275ms.</li>
+        </ul>
+
+        <h2>Selected Projects</h2>
+        <ul>
+          <li><strong>Lattice</strong> — Distributed multi-sensor volumetric capture with 4DGS-style 3D reconstruction (Finalist — Hack the North 2025)</li>
+          <li><strong>Hello World!</strong> — Two-way ASL/English translation using TensorFlow (1st Place — UTS BluesHacks 2024)</li>
+          <li><strong>Bergster</strong> — Cognitive training via real-time facial emotion detection (3rd Place — Guelph GDSC Hacks 2024)</li>
+          <li><strong>DataBot</strong> — AI-powered SQL query analyzer with Go backend (Finalist — LAHacks 2025)</li>
+          <li><strong>SafeGrounds</strong> — Platform for Indigenous land awareness with interactive mapping</li>
+          <li><strong>Echo</strong> — AI memory recall assistant using computer vision for Alzheimer's/dementia care</li>
+          <li><strong>Verbate</strong> — AI interview coach with GPT-4 and AWS Polly (Best Use of AI — IEEE MakeUC 2023)</li>
+          <li><strong>HandPilot</strong> — Hands-free computer control via MediaPipe gesture detection (1st Place — YRHacks 2023)</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <p>Python, C/C++, C#, Java, TypeScript, Go, React, Next.js, PyTorch, TensorFlow, OpenCV, MediaPipe, Flask, AWS, MongoDB, PostgreSQL, Docker, Git, Qt, VTK/ITK, Graphic Design</p>
+
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/anton-chl">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/anton-chl">LinkedIn</a></li>
+          <li><a href="https://devpost.com/cx">Devpost</a></li>
+          <li><a href="mailto:antonlee.inquiries@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </noscript>
   </body>
 </html>

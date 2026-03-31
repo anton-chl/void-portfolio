@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Lattice",
+    "slug": "lattice",
+    "description": "Distributed multi-sensor volumetric capture leveraging multi-Kinect LiDAR arrays with Procrustes and ICP-based spatial alignment, zero-copy ring buffers for lock-free inter-process communication, and 4DGS-style reconstruction to generate navigable 3D point clouds with Git-style holographic replay across desktop, web, and AR/VR.",
+    "theme": "3D Vision / Systems",
+    "tags": ["C/C++", "C#", ".NET", "Python", "OpenCV", "Unity", "Kinect SDK"],
+    "award": "Finalist — Hack the North 2025",
+    "year": 2026,
+    "featured": true,
+    "links": {
+      "devpost": "https://devpost.com/software/tempo-l1idkw",
+      "demo": "https://www.youtube.com/watch?v=YqKwPFIWVN0"
+    }
+  },
+  {
+    "title": "Hello World!",
+    "slug": "hello-world",
+    "description": "Two-way ASL/English translation app using TensorFlow and Google Cloud API to recognize ASL hand gestures in real time and translate them to text (or vice versa, with animated output) and synthesized audio output, making computers more accessible for the deaf and hard-of-hearing community.",
+    "theme": "Machine Learning / Accessibility",
+    "tags": ["JavaScript", "TypeScript", "TensorFlow", "Google Cloud API"],
+    "award": "1st Place — UTS BluesHacks 2024",
+    "year": 2024,
+    "featured": true,
+    "links": {
+      "devpost": "https://devpost.com/software/hello-world-t1k74i",
+      "github": "https://github.com/yair-k/Hello-World"
+    }
+  },
+  {
+    "title": "Bergster",
+    "slug": "bergster",
+    "description": "Cognitive training tool that uses real-time facial recognition and emotion detection to help people with social disabilities train and improve their emotional recognition and expression. Features offline-first design, performance analysis with visual charts, and emotion testing for measurable progress tracking.",
+    "theme": "Healthcare / Accessibility",
+    "tags": ["React", "Next.js", "TensorFlow", "face-api.js", "TailwindCSS"],
+    "award": "3rd Place — Guelph GDSC Hacks 2024",
+    "year": 2024,
+    "featured": true,
+    "links": {
+      "devpost": "https://devpost.com/software/the-bergster",
+      "github": "https://github.com/yair-k/bergster-master"
+    }
+  },
+  {
+    "title": "DataBot",
+    "slug": "databot",
+    "description": "Tool for analyzing slow or inefficient SQL queries; uses Google Gemini to suggest optimized rewrites, explain query plans, and surface index recommendations. Backend is built in Go for high throughput.",
+    "theme": "AI / Developer Tools",
+    "tags": ["Go", "TypeScript", "Next.js", "Google Gemini"],
+    "award": "Finalist — LAHacks 2025",
+    "year": 2025,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/optigen",
+      "demo": "https://vimeo.com/1079121387"
+    }
+  },
+  {
+    "title": "SafeGrounds",
+    "slug": "safegrounds",
+    "description": "Platform empowering investors and developers to identify and respect Indigenous lands through transparent, actionable insights. Features interactive mapping with Leaflet, community reporting, contractor response systems, and ML-powered land assessment.",
+    "theme": "Social Impact",
+    "tags": ["TypeScript", "Python", "Flask", "SQLite", "Next.js", "Leaflet", "AWS"],
+    "year": 2025,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/safegrounds",
+      "github": "https://github.com/yair-k/SafeGrounds"
+    }
+  },
+  {
+    "title": "Project Klean",
+    "slug": "project-klean",
+    "description": "Enterprise solution for digital pollution via AI-powered code optimization. Analyzes and optimizes Python code to improve efficiency and sustainability using CodeBERT fine-tuning.",
+    "theme": "Sustainability / Developer Tools",
+    "tags": ["Python", "Pandas", "ML", "CodeBERT", "CodeCarbon", "Streamlit"],
+    "year": 2024,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/project-klean",
+      "demo": "https://www.youtube.com/watch?v=Nco-X2uYNeQ",
+      "github": "https://github.com/yair-k/Klean"
+    }
+  },
+  {
+    "title": "Echo",
+    "slug": "echo",
+    "description": "AI-powered memory recall assistant using computer vision and natural language processing to record and process daily activities for users with memory loss, Alzheimer's, and dementia.",
+    "theme": "Healthcare / AI",
+    "tags": ["Python", "Next.js", "OpenCV", "CLIP", "Cohere", "OpenAI Whisper"],
+    "year": 2024,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/echo-gq3oh0",
+      "github": "https://github.com/yair-k/Echo"
+    }
+  },
+  {
+    "title": "Verbate",
+    "slug": "verbate",
+    "description": "An AI interview coach that generates role-specific questions, evaluates user responses in real time using GPT-4, and delivers audio feedback via AWS Polly.",
+    "theme": "Generative AI / Voice",
+    "tags": ["Python", "GPT-4", "AWS Polly", "Next.js"],
+    "award": "Best Use of AI — IEEE MakeUC 2023",
+    "year": 2023,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/verbate",
+      "demo": "https://www.youtube.com/watch?v=NPcaM3cgHgA",
+      "github": "https://github.com/yair-k/Verbate"
+    }
+  },
+  {
+    "title": "SkinSight",
+    "slug": "skinsight",
+    "description": "A dermatology prototype that classifies skin lesion images across multiple diagnostic categories using a CNN trained on the HAM10000 dataset.",
+    "theme": "Machine Learning / Healthcare",
+    "tags": ["Python", "Flask", "PyTorch", "TensorFlow"],
+    "year": 2023,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/skinsight-your-virtual-dermatologist",
+      "demo": "https://www.youtube.com/watch?v=eT_LsjFUMk4",
+      "github": "https://github.com/d-huliu/SkinSight-"
+    }
+  },
+  {
+    "title": "HandPilot",
+    "slug": "handpilot",
+    "description": "Uses MediaPipe hand landmark detection combined with OpenCV to translate hand gestures into system-level mouse movement, clicks, and keyboard input — allowing hands-free computer control.",
+    "theme": "Computer Vision / Accessibility",
+    "tags": ["Python", "OpenCV", "MediaPipe"],
+    "award": "1st Place — YRHacks 2023",
+    "year": 2023,
+    "featured": false,
+    "links": {
+      "devpost": "https://devpost.com/software/handpilot",
+      "demo": "https://www.youtube.com/watch?v=MmD9vCCLqao",
+      "github": "https://github.com/yair-k/HandPilot"
+    }
+  }
+]

@@ -2,3 +2,6 @@
 /li https://www.linkedin.com/in/anton-chl/ 301
 /gh https://github.com/anton-chl 301
 /r /Real-Resume.pdf 301
+
+# SPA fallback — must be last
+/* /index.html 200

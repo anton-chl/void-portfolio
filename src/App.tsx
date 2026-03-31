@@ -20,6 +20,21 @@ function ScrollToTop() {
   }, [pathname])
   return null
 }
+
+const pageTitles: Record<string, string> = {
+  '/': 'Anton Lee — Software Engineer & Visual Artist',
+  '/about': 'About — Anton Lee',
+  '/projects': 'Projects — Anton Lee',
+  '/art': 'Art — Anton Lee',
+}
+
+function DocumentTitle() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    document.title = pageTitles[pathname] || 'Anton Lee'
+  }, [pathname])
+  return null
+}
 import type { SectionScrollData } from './components/three/SceneManager'
 
 function App() {
@@ -45,6 +60,7 @@ function App() {
   return (
     <SmoothScroll>
       <ScrollToTop />
+      <DocumentTitle />
       <div className="font-loader" aria-hidden="true" style={{ fontFamily: 'Raleway, Nasalization' }}>Anton Selected Work Connect</div>
 
       {/* Layer 1: Persistent 3D Canvas */}
