@@ -5,7 +5,7 @@ import { BackgroundCanvas } from './components/three/BackgroundCanvas'
 import { Navigation } from './components/layout/Navigation'
 import { Footer } from './components/layout/Footer'
 import { PageTransition } from './components/layout/PageTransition'
-import { SmoothScroll } from './components/layout/SmoothScroll'
+import { SmoothScroll, useLenis } from './components/layout/SmoothScroll'
 import { Home } from './routes/Home'
 import { Projects } from './routes/Projects'
 import { Art } from './routes/Art'
@@ -15,9 +15,16 @@ import { useState, useCallback } from 'react'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
+  const lenis = useLenis()
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    // Use Lenis scrollTo so its internal state stays in sync.
+    // Falls back to native scrollTo when Lenis is disabled (mobile / reduced-motion).
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true })
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, lenis])
   return null
 }
 

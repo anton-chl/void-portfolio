@@ -1,0 +1,28 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# ── Cache headers ────────────────────────────────────────────────────────────
+# Hashed assets are immutable — cache forever.
+# HTML must always be revalidated so it never references stale chunk hashes.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Fonts — cache for 1 year
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
