@@ -58,9 +58,6 @@ Disallow: /
 
 # END Cloudflare Managed Content
 
-User-agent: *
-Allow: /
-
 Sitemap: https://antonlee.ca/sitemap.xml
 
 # Machine-readable profile and project data
