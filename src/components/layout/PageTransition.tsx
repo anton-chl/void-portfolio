@@ -10,15 +10,12 @@ interface PageTransitionProps {
 export function PageTransition({ children }: PageTransitionProps) {
   const [isPresent, safeToRemove] = usePresence()
 
-  // Safety valve: if the exit animation hasn't completed within 500ms
-  // (it should take 250ms), force-signal removal so AnimatePresence
-  // can mount the incoming route. This prevents mode="wait" from
-  // getting permanently stuck after tab backgrounding / bfcache restore.
+  // Safety valve: force-remove after 600ms if exit animation stalls.
   useEffect(() => {
     if (!isPresent) {
       const timer = setTimeout(() => {
         safeToRemove?.()
-      }, 500)
+      }, 600)
       return () => clearTimeout(timer)
     }
   }, [isPresent, safeToRemove])
@@ -29,6 +26,13 @@ export function PageTransition({ children }: PageTransitionProps) {
       initial="initial"
       animate="animate"
       exit="exit"
+      // When exiting, pull out of layout flow so the entering page
+      // takes its natural position and there's no vertical stacking.
+      style={
+        !isPresent
+          ? { position: 'absolute', top: 0, left: 0, right: 0 }
+          : undefined
+      }
     >
       {children}
     </motion.div>

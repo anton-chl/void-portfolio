@@ -69,22 +69,25 @@ export function About({ onSectionData }: AboutProps) {
   }, [onSectionData])
 
   useEffect(() => {
+    let active = true
     updateSectionData()
     requestAnimationFrame(() => {
+      if (!active) return
       updateSectionData()
-      requestAnimationFrame(updateSectionData)
+      requestAnimationFrame(() => {
+        if (!active) return
+        updateSectionData()
+      })
     })
     window.addEventListener('scroll', updateSectionData, { passive: true })
     window.addEventListener('resize', updateSectionData, { passive: true })
     return () => {
+      active = false
       window.removeEventListener('scroll', updateSectionData)
       window.removeEventListener('resize', updateSectionData)
+      onSectionData([])
     }
-  }, [updateSectionData])
-
-  useEffect(() => {
-    return () => onSectionData([])
-  }, [onSectionData])
+  }, [updateSectionData, onSectionData])
 
   return (
     <main className={styles.page}>

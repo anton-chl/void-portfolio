@@ -64,6 +64,13 @@ function App() {
     setSectionData(data)
   }, [])
 
+  // Clear stale section headings immediately on route change so the
+  // previous page's particle text doesn't linger during the transition.
+  useEffect(() => {
+    setSectionData([])
+    if (!isHome) setHeroProgress(0)
+  }, [location.pathname, isHome])
+
   return (
     <SmoothScroll>
       <ScrollToTop />
@@ -83,7 +90,7 @@ function App() {
       <div style={{ position: 'relative', zIndex: 1, minHeight: '100vh' }}>
         <Navigation />
 
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route
               path="/"
